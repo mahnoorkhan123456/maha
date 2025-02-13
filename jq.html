@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<button id="hide">hide</button>
+<button id="seemore">see more</button>
+<button id="show">show</button>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur adipisci harum doloribus atque praesentium illo natus itaque, nihil nobis reiciendis repellendus ab veniam, odit eos blanditiis magni quidem dolore laudantium!</p>
+
+    <script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    
+    $("#seemore").click(function(){
+        $("p").toggle();
+    });
+    
+    $("#show").click(function(){
+        $("p").show();
+    });
+ });
+
+
+
+</script>
+
+
+
+</body>
+</html>

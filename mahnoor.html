@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>item</td>
+        
+        </tr>
+        <tr>
+            <td>price</td>
+        
+        </tr>
+        <tr>
+            <td>total</td>
+        
+        </tr>
+    </table>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                var item = $('input').eq(0).val();
+                var price = $('input').eq(1).val();
+                var cnvertint= parseInt(price);
+                total =total +cnvertint;
+                $("ol").append("<li>" + item + "</li>");
+                $('input').eq(0).val("");
+               
+            });
+        });
+      
+       
+               
+          
+    </script>
+    
+</body>
+</html>
